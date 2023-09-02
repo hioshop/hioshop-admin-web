@@ -1,6 +1,6 @@
 // const rootUrl = 'https://www.guzong1.com:446/admin/';
-const rootUrl = 'http://server:8360/admin/';
-// const rootUrl = 'http://127.0.0.1:8360/admin/';
+// const rootUrl = 'http://server:8360/admin/';
+const rootUrl = '/admin/';
 
 const api = {
     rootUrl : rootUrl,

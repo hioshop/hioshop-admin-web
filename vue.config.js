@@ -36,8 +36,18 @@ module.exports = {
       warnings: false,
       errors: true,
     },
+    proxy: {
+      // 代理到服务器
+      "/admin": {
+        target: process.env.SERVER_URL,
+        changeOrigin: true,
+        pathRewrite: {
+          "^/admin": "",
+        },
+      },
+    },
     // lintOnSave: false,
-    before: require("./mock/mock-server.js"),
+    // before: require("./mock/mock-server.js"),
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
