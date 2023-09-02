@@ -30,9 +30,9 @@ module.exports = {
   lintOnSave: process.env.NODE_ENV === "development",
   productionSourceMap: false,
   devServer: {
-    watch: false,
+    disableHostCheck: true,
     port: port,
-    open: false,
+    // open: false,
     overlay: {
       warnings: false,
       errors: true,
